@@ -1,0 +1,6 @@
+[core]
+    remote = datalab-gpu
+['remote "datalab-gpu"']
+    url = ssh://datalab:datalab@datalab-gpu.cmx.ru:/files/stoloto-tds
+    user = datalab
+    ask_password = True
