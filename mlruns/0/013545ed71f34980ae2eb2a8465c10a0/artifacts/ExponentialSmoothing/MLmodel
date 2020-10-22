@@ -1,0 +1,10 @@
+artifact_path: ExponentialSmoothing
+flavors:
+  python_function:
+    cloudpickle_version: 1.6.0
+    env: conda.yaml
+    loader_module: mlflow.pyfunc.model
+    python_model: python_model.pkl
+    python_version: 3.8.5
+run_id: 013545ed71f34980ae2eb2a8465c10a0
+utc_time_created: '2020-10-21 18:24:06.956880'
