@@ -1,0 +1,15 @@
+artifact_uri: ./mlruns/0/d9c2c97720864db4aa221ff82a6b8f49/artifacts
+end_time: 1604864675452
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: d9c2c97720864db4aa221ff82a6b8f49
+run_uuid: d9c2c97720864db4aa221ff82a6b8f49
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1604864675417
+status: 3
+tags: []
+user_id: alenalapteva
