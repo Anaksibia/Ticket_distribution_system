@@ -1,0 +1,105 @@
+artifact_path: XGB_bst_all_ts
+flavors:
+  python_function:
+    env: conda.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    python_version: 3.8.5
+  sklearn:
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 0.23.2
+run_id: d45bace72e3b4b679bd72f9ab9dd9694
+signature:
+  inputs: '[{"name": "game_code_0", "type": "long"}, {"name": "game_code_1", "type":
+    "long"}, {"name": "game_code_2", "type": "long"}, {"name": "game_code_3", "type":
+    "long"}, {"name": "ops_num_0", "type": "long"}, {"name": "ops_num_1", "type":
+    "long"}, {"name": "ops_num_2", "type": "long"}, {"name": "ops_num_3", "type":
+    "long"}, {"name": "ops_num_4", "type": "long"}, {"name": "ops_num_5", "type":
+    "long"}, {"name": "ops_num_6", "type": "long"}, {"name": "ops_num_7", "type":
+    "long"}, {"name": "last_year_sales", "type": "double"}, {"name": "general_sales",
+    "type": "double"}, {"name": "game_code_sales", "type": "double"}, {"name": "ops_num_sales",
+    "type": "double"}, {"name": "mean_w12__benford_correlation", "type": "double"},
+    {"name": "mean_w8__benford_correlation", "type": "double"}, {"name": "mean_w8__abs_energy",
+    "type": "double"}, {"name": "mean_w8__sum_values", "type": "double"}, {"name":
+    "mean_w8__median", "type": "double"}, {"name": "mean_w8__mean", "type": "double"},
+    {"name": "mean_w8__maximum", "type": "double"}, {"name": "mean_w8__minimum", "type":
+    "double"}, {"name": "mean_w8__quantile__q_0.2", "type": "double"}, {"name": "mean_w8__quantile__q_0.3",
+    "type": "double"}, {"name": "mean_w8__quantile__q_0.4", "type": "double"}, {"name":
+    "mean_w8__quantile__q_0.1", "type": "double"}, {"name": "mean_w8__quantile__q_0.7",
+    "type": "double"}, {"name": "mean_w8__quantile__q_0.8", "type": "double"}, {"name":
+    "mean_w8__quantile__q_0.9", "type": "double"}, {"name": "mean_w8__cwt_coefficients__coeff_0__w_2__widths_(2,
+    5, 10, 20)", "type": "double"}, {"name": "mean_w8__cwt_coefficients__coeff_0__w_5__widths_(2,
+    5, 10, 20)", "type": "double"}, {"name": "mean_w8__cwt_coefficients__coeff_0__w_10__widths_(2,
+    5, 10, 20)", "type": "double"}, {"name": "mean_w8__cwt_coefficients__coeff_0__w_20__widths_(2,
+    5, 10, 20)", "type": "double"}, {"name": "mean_w8__fft_coefficient__attr_\"real\"__coeff_0",
+    "type": "double"}, {"name": "mean_w8__quantile__q_0.6", "type": "double"}, {"name":
+    "mean_w8__fft_coefficient__attr_\"abs\"__coeff_0", "type": "double"}, {"name":
+    "mean_w4__maximum", "type": "double"}, {"name": "mean_w4__mean", "type": "double"},
+    {"name": "mean_w4__median", "type": "double"}, {"name": "mean_w4__cwt_coefficients__coeff_0__w_2__widths_(2,
+    5, 10, 20)", "type": "double"}, {"name": "mean_w4__sum_values", "type": "double"},
+    {"name": "mean_w4__cwt_coefficients__coeff_0__w_10__widths_(2, 5, 10, 20)", "type":
+    "double"}, {"name": "mean_w4__minimum", "type": "double"}, {"name": "mean_w4__abs_energy",
+    "type": "double"}, {"name": "mean_w4__quantile__q_0.1", "type": "double"}, {"name":
+    "mean_w4__fft_coefficient__attr_\"real\"__coeff_0", "type": "double"}, {"name":
+    "mean_w4__quantile__q_0.3", "type": "double"}, {"name": "mean_w4__fft_coefficient__attr_\"abs\"__coeff_0",
+    "type": "double"}, {"name": "mean_w4__quantile__q_0.4", "type": "double"}, {"name":
+    "mean_w4__quantile__q_0.6", "type": "double"}, {"name": "mean_w4__quantile__q_0.7",
+    "type": "double"}, {"name": "mean_w4__quantile__q_0.8", "type": "double"}, {"name":
+    "mean_w4__quantile__q_0.9", "type": "double"}, {"name": "mean_w4__quantile__q_0.2",
+    "type": "double"}, {"name": "mean_w4__cwt_coefficients__coeff_0__w_20__widths_(2,
+    5, 10, 20)", "type": "double"}, {"name": "mean_w4__cwt_coefficients__coeff_0__w_5__widths_(2,
+    5, 10, 20)", "type": "double"}, {"name": "mean_w4__benford_correlation", "type":
+    "double"}, {"name": "deviation__cwt_coefficients__coeff_0__w_20__widths_(2, 5,
+    10, 20)", "type": "double"}, {"name": "deviation__quantile__q_0.3", "type": "double"},
+    {"name": "deviation__quantile__q_0.8", "type": "double"}, {"name": "deviation__quantile__q_0.7",
+    "type": "double"}, {"name": "deviation__quantile__q_0.6", "type": "double"}, {"name":
+    "deviation__cwt_coefficients__coeff_0__w_10__widths_(2, 5, 10, 20)", "type": "double"},
+    {"name": "deviation__quantile__q_0.4", "type": "double"}, {"name": "deviation__cwt_coefficients__coeff_0__w_5__widths_(2,
+    5, 10, 20)", "type": "double"}, {"name": "deviation__quantile__q_0.9", "type":
+    "double"}, {"name": "deviation__quantile__q_0.2", "type": "double"}, {"name":
+    "deviation__minimum", "type": "double"}, {"name": "deviation__fft_coefficient__attr_\"real\"__coeff_0",
+    "type": "double"}, {"name": "deviation__maximum", "type": "double"}, {"name":
+    "deviation__mean", "type": "double"}, {"name": "deviation__median", "type": "double"},
+    {"name": "deviation__sum_values", "type": "double"}, {"name": "deviation__quantile__q_0.1",
+    "type": "double"}, {"name": "deviation__cwt_coefficients__coeff_0__w_2__widths_(2,
+    5, 10, 20)", "type": "double"}, {"name": "previous__abs_energy", "type": "double"},
+    {"name": "previous__fft_coefficient__attr_\"abs\"__coeff_0", "type": "double"},
+    {"name": "previous__fft_coefficient__attr_\"real\"__coeff_0", "type": "double"},
+    {"name": "previous__cwt_coefficients__coeff_0__w_20__widths_(2, 5, 10, 20)", "type":
+    "double"}, {"name": "previous__median", "type": "double"}, {"name": "previous__mean",
+    "type": "double"}, {"name": "previous__maximum", "type": "double"}, {"name": "previous__minimum",
+    "type": "double"}, {"name": "previous__quantile__q_0.1", "type": "double"}, {"name":
+    "previous__quantile__q_0.2", "type": "double"}, {"name": "previous__sum_values",
+    "type": "double"}, {"name": "previous__quantile__q_0.3", "type": "double"}, {"name":
+    "previous__quantile__q_0.6", "type": "double"}, {"name": "previous__quantile__q_0.8",
+    "type": "double"}, {"name": "previous__quantile__q_0.9", "type": "double"}, {"name":
+    "previous__cwt_coefficients__coeff_0__w_2__widths_(2, 5, 10, 20)", "type": "double"},
+    {"name": "previous__cwt_coefficients__coeff_0__w_5__widths_(2, 5, 10, 20)", "type":
+    "double"}, {"name": "previous__cwt_coefficients__coeff_0__w_10__widths_(2, 5,
+    10, 20)", "type": "double"}, {"name": "previous__quantile__q_0.4", "type": "double"},
+    {"name": "previous__quantile__q_0.7", "type": "double"}, {"name": "mean_w12__sum_values",
+    "type": "double"}, {"name": "mean_w12__quantile__q_0.4", "type": "double"}, {"name":
+    "mean_w12__quantile__q_0.2", "type": "double"}, {"name": "mean_w12__quantile__q_0.3",
+    "type": "double"}, {"name": "mean_w12__maximum", "type": "double"}, {"name": "mean_w12__quantile__q_0.6",
+    "type": "double"}, {"name": "mean_w12__quantile__q_0.7", "type": "double"}, {"name":
+    "mean_w12__quantile__q_0.8", "type": "double"}, {"name": "mean_w12__quantile__q_0.9",
+    "type": "double"}, {"name": "mean_w12__quantile__q_0.1", "type": "double"}, {"name":
+    "mean_w12__cwt_coefficients__coeff_0__w_2__widths_(2, 5, 10, 20)", "type": "double"},
+    {"name": "mean_w12__cwt_coefficients__coeff_0__w_10__widths_(2, 5, 10, 20)", "type":
+    "double"}, {"name": "mean_w12__cwt_coefficients__coeff_0__w_20__widths_(2, 5,
+    10, 20)", "type": "double"}, {"name": "mean_w12__fft_coefficient__attr_\"real\"__coeff_0",
+    "type": "double"}, {"name": "mean_w12__fft_coefficient__attr_\"abs\"__coeff_0",
+    "type": "double"}, {"name": "mean_w12__mean", "type": "double"}, {"name": "mean_w12__median",
+    "type": "double"}, {"name": "mean_w12__abs_energy", "type": "double"}, {"name":
+    "mean_w12__cwt_coefficients__coeff_0__w_5__widths_(2, 5, 10, 20)", "type": "double"},
+    {"name": "mean_w12__minimum", "type": "double"}, {"name": "previous__benford_correlation",
+    "type": "double"}, {"name": "deviation__benford_correlation", "type": "double"},
+    {"name": "deviation__fft_coefficient__attr_\"angle\"__coeff_0", "type": "double"},
+    {"name": "deviation__range_count__max_1000000000000.0__min_0", "type": "double"},
+    {"name": "deviation__count_above__t_0", "type": "double"}, {"name": "deviation__count_below__t_0",
+    "type": "double"}, {"name": "deviation__range_count__max_1__min_-1", "type": "double"},
+    {"name": "deviation__fft_coefficient__attr_\"abs\"__coeff_0", "type": "double"},
+    {"name": "deviation__abs_energy", "type": "double"}]'
+  outputs: '[{"type": "float"}]'
+utc_time_created: '2020-11-19 10:07:21.608858'
