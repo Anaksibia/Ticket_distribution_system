@@ -1,24 +1,29 @@
-# alapteva-time-series
-
-Обучающая задача по time series
+# ticket_distribution_system
 
 ## Description
 
-A longer description of your project goes here...
+Ticket distribution system based on prediction of lottery ticket demand.
+
+In EDA.ipynb there is data analysis.
+We took some basic time series models as a baseline (see SimpleModels.ipynb).
+There is many time series - one for each game type and point of sale combination.
+Witch can be predicted individually (Boosting.ipynb) or we can consider them as one dataframe where we can use information about another games and sale points (Hierarchical_model.ipynb).
+
+In scripts folder there is code for tune hierarchical algorithm - number of features and hyperparameters of LightGBM.
 
 ## Installation
 
 In order to set up the necessary environment:
 
-1. create an environment `alapteva-time-series` with the help of [conda],
+1. create an environment `ticket_distribution_system` with the help of [conda],
    ```
    conda env create -f environment.yaml
    ```
 2. activate the new environment with
    ```
-   conda activate alapteva-time-series
+   conda activate ticket_distribution_system
    ```
-3. install `alapteva-time-series` with:
+3. install `ticket_distribution_system` with:
    ```
    python setup.py install # or `develop`
    ```
@@ -49,7 +54,7 @@ Then take a look into the `scripts` and `notebooks` folders.
 2. Create concrete dependencies as `environment.lock.yaml` for the exact reproduction of your
    environment with:
    ```
-   conda env export -n alapteva-time-series -f environment.lock.yaml
+   conda env export -n ticket_distribution_system -f environment.lock.yaml
    ```
    For multi-OS development, consider using `--no-builds` during the export.
 3. Update your current environment with respect to a new `environment.lock.yaml` using:
